@@ -1,0 +1,25 @@
+[package]
+  authors = [ "Akshat Mittal <hi@akshatmittal.com>" ]
+  edition = "2021"
+  name = "salty"
+  version = "0.1.0"
+
+[dependencies]
+  alloy-primitives = { version = "0.6.2", features = [ "rand" ] }
+  clap = { version = "4.4.18", features = [ "derive" ] }
+  console = "0.15.8"
+  figment = { version = "0.10.14", features = [ "toml" ] }
+  indicatif = "0.17.7"
+  ocl = "0.19.6"
+  rand = "0.8.5"
+  serde = { version = "1.0.196", features = [ "derive" ] }
+
+[features]
+  default = [  ]
+
+[profile.release]
+  opt-level = 3
+  lto = "fat"
+  strip = true
+  panic = "abort"
+  codegen-units = 1
