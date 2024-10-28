@@ -73,10 +73,12 @@ The following parameters are available when using the `mine` command.
 
 | Platform          | Platform Type  | Speed |
 | ----------------- | -------------- | ----- |
+| Nvidia H100       | GPU (CUDA)     | 3,700 |
 | Nvidia RTX 3070   | GPU (CUDA)     | 1,250 |
 | Apple M1 Pro      | Hybrid (Metal) | 40    |
 | AMD Ryzen 5 3600  | CPU (PoCL)     | TODO  |
 | AMD Ryzen 9 5900X | CPU (PoCL)     | TODO  |
+
 
 Speed is measured in million attempts per second.
 
